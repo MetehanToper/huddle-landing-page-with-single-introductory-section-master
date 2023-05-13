@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/f9f6837ea3.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      min-height: 100vh;
+      background-image:url(./images/bg-desktop.svg);
+      background-repeat: no-repeat;
+      background-color: hsl(257, 40%, 49%) ;
+    }
+    .container{
+      width: 1200px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .cont-flex{
+      display: flex;
+      flex-direction:row;
+    }
+    .logo{
+      width: 80px;
+      height: 100px;
+      margin-top: 30px;
+      display: inline-block;
+    }
+    .image{
+      width: 400px;
+      height: 400px;
+      margin-top: 10px;
+    }
+    .content{
+      width: 500px;
+      height: 400px;
+      margin-top: 30px;
+      margin-left: 350px;
+      color: #fff;
+      font-size: 16px;
+    }
+    .content h1{
+      width: 400px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    .content p{
+      width: 455px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .btn{
+      display: inline-block;
+      width: 170px;
+      height: 40px;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      color: 1F1F1F;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center; 
+      text-decoration: none;
+      line-height: 40px;
+      background-color: #fff;
+      margin-top: 20px;
+    }
+    .btn:hover{
+      background-color: hsl(300, 69%, 71%);
+      border: 1px solid hsl(300, 69%, 71%);
+      color: #fff;
+    }
+   .icons{
+    height: 50px;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    color: #fff;
+   }
+   .icon{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+   }
+   .icon:hover{
+   color:  hsl(300, 69%, 71%);
+   border: 1px solid  hsl(300, 69%, 71%);
+   cursor:pointer;
+   }
+
+    .attribution { font-size: 11px; text-align: center; position: relative; bottom: -50px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="cont-flex">
+          <div class="image">
+            <img src="./images/illustration-mockups.svg" alt="illustration-mockups">
+          </div>
+        
+          <div class="content">
+            <h1>Build The Community Your Fans Will Love</h1>
+            <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+            Create connections with your users as you engage in genuine discussion.</p>
+            <a class="btn" href="#">Register</a>
+          </div>
+        </div>
+        <div class="icons">
+            <div class="icon face">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon twit">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon insta">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mete Han TOPER</a>.
+    </p>
+  </footer>
+</body>
+</html>
